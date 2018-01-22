@@ -1,0 +1,35 @@
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+#display {
+    font-size: 30px;
+}
+
+#delete, #clear {
+    width: 80px;
+    height: 20px;
+    margin-bottom: 5px;
+    background: #3498db;
+    font-family: monospace;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.button {
+    background: #3498db;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .button:hover {
+    background: #3cb0fd;
+  }

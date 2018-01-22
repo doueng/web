@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<body>
+    <script>
+
+        var BEATEN_BY = {
+            'paper' : 'scissors',
+            'rock' : 'paper',
+            'scissors' : 'rock'
+        }
+
+        function computerPlay() {
+            const a = ["rock", "paper", "scissors"]
+            return a[Math.floor((Math.random() * 3))]
+        }
+
+        function playRound (ps, cp) {
+            ps = ps.toLowerCase()
+            cp = cp.toLowerCase()
+            if (ps === cp)
+                return `It is a draw!`
+            else if (ps == BEATEN_BY[cp])
+                return `You Lose! ${cp} beats ${ps}`
+            else if (cp == BEATEN_BY[ps])
+                return `You Win! ${ps} beats ${cp}`
+            else
+                return `Invalid input ${ps}, can only input rock, paper or scissors`
+        }
+
+        function game(numGames) {
+            for (i = 0; i < numGames; i++) {
+                console.log(playRound(prompt("Enter rock, paper or scissors"), computerPlay()))
+            }
+        }
+        game(5)
+    </script>
+</body>

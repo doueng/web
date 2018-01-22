@@ -1,0 +1,25 @@
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+#user {
+    font-size: 12px;
+    width: 60px;
+}
+
+#input {
+    font-size: 12px;
+    width: 150px;
+}
+
+#chatBox {
+    overflow: auto;
+    font-size: 12px;
+    height: 400px;
+    width: 500px;
+    background-color: white;
+}
